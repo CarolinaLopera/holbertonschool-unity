@@ -521,7 +521,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1009608611994197509, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_Name
-      value: Ball (2)
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 1009608611994197513, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_RootOrder
@@ -590,7 +590,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1009608611994197509, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_Name
-      value: Ball (4)
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 1009608611994197513, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_RootOrder
@@ -659,7 +659,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1009608611994197509, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_Name
-      value: Ball (3)
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 1009608611994197513, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_RootOrder
@@ -728,7 +728,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1009608611994197509, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_Name
-      value: Ball (1)
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 1009608611994197513, guid: 7f9a16aa7e8659c4cbc63cab5c988fec, type: 3}
       propertyPath: m_RootOrder
