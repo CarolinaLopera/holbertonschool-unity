@@ -2805,5 +2805,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5922695656880765229, guid: 618320d904402d14889b5cd8d8865ff9, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922695656880765229, guid: 618320d904402d14889b5cd8d8865ff9, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922695656880765229, guid: 618320d904402d14889b5cd8d8865ff9, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618320d904402d14889b5cd8d8865ff9, type: 3}
