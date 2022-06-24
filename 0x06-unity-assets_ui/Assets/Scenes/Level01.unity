@@ -666,14 +666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8187bc15c7e69984bb935fca56790641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   speed: 25
   horizontal: 0
   vertical: 0
-  jump: 10
-  gravity: 30
-  fallVelocity: 0
-  mainCamera: {fileID: 1337268218}
+  player: {fileID: 0}
 --- !u!1 &714695012
 GameObject:
   m_ObjectHideFlags: 0
