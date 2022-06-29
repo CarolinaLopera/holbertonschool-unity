@@ -29,16 +29,16 @@ public class PlayerController : MonoBehaviour
     void Update() {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
-        movePlayer.x = horizontal;
-        movePlayer.z = vertical;
-        movePlayer = movePlayer * speed;
 
-        // playerInput = new Vector3(horizontal, 0, vertical);
-        // playerInput = Vector3.ClampMagnitude(playerInput, 1);
-        // CamDirecction();
-        // movePlayer = playerInput.x * camRight + playerInput.z * camForward;
-        // player.transform.LookAt(player.transform.position + movePlayer);
-        // movePlayer.y = -gravity * Time.deltaTime;
+        playerInput = new Vector3(horizontal, 0, vertical);
+        playerInput = Vector3.ClampMagnitude(playerInput, 1);
+        CamDirecction();
+
+        movePlayer = playerInput.x * camRight + playerInput.z * camForward;
+        // movePlayer.x = horizontal;
+        // movePlayer.z = vertical;
+        movePlayer = movePlayer * speed;
+        player.transform.LookAt(player.transform.position + movePlayer);
 
         SetGravity();
         PlayerJump();
@@ -71,7 +71,6 @@ public class PlayerController : MonoBehaviour
 
         camForward.y = 0;
         camRight.y = 0;
-
         camForward = camForward.normalized;
         camRight = camRight.normalized;
     }
