@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 camForward;
     private Vector3 camRight;
     public Camera mainCamera;
+    public Transform emptyObject;
+    public GameObject playerEjes;
 
     // Start is called before the first frame update
     void Start() {
@@ -43,9 +45,15 @@ public class PlayerController : MonoBehaviour
         SetGravity();
         PlayerJump();
         player.Move(movePlayer * Time.deltaTime);
-    }
 
-    // void FixedUpdate() {}
+        if (movePlayer.y < -60) {
+            // playerEjes.transform.position = emptyObject.transform.position;
+            // movePlayer.y = 20;
+            // LoadScene();
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
+    }
 
     void SetGravity() {
         // player.Move(new Vector3(0, -gravity, 0));
@@ -59,7 +67,9 @@ public class PlayerController : MonoBehaviour
     }
 
     public void PlayerJump() {
-        if (player.isGrounded && Input.GetButtonDown("Jump")) {
+        /* player.isGrounded && */
+        if ((transform.position.y <= 1.58 && transform.position.y > 0)
+                && Input.GetButtonDown("Jump")) {
             fallVelocity = jump;
             movePlayer.y = fallVelocity;
         }
