@@ -2,37 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using System;
 
 public class Timer : MonoBehaviour
 {
     public Text TimerText;
-    private float seconds;
     private float mlSeconds;
-    private int minute;
-    private int hour;
+    private float seconds;
+    private int minutes;
 
     // Start is called before the first frame update
     void Start() {}
 
     void Update() {
-        UpdateTimerUI();
+        TimerUI();
     }
 
-    public void UpdateTimerUI() {
-        seconds += Time.deltaTime;
+    public void TimerUI() {
         mlSeconds += Time.deltaTime * 1000;
-        TimerText.text = minute + ":" + (int)seconds + "." + (int)mlSeconds;
-        
-        // if (mlSeconds >= 1000) {
-        //     seconds++;
-        //     mlSeconds = 0;
-        // } else 
+        // TimerText.text = minutes + ":" + seconds.ToString("00") + "." + mlSeconds.ToString("00");
+        TimerText.text = String.Format("{0:0}:{1:00}.{2:00}", minutes, seconds, mlSeconds);
+
+        if (mlSeconds >= 1000) {
+            seconds++;
+            mlSeconds = 0;
+        }
         if (seconds >= 60) {
-            minute++;
+            minutes++;
             seconds = 0;
-        } /* else if(minute >= 60){
-            hour++;
-            minute = 0;
-        }*/ 
+        }
     }
 }
