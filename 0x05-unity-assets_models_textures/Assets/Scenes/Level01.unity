@@ -560,14 +560,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307411670}
-  m_LocalRotation: {x: 0.005628757, y: -0.0065233517, z: 0.0013917674, w: 0.9999619}
-  m_LocalPosition: {x: -48.2, y: 0.0000000026882148, z: -2.7}
+  m_LocalRotation: {x: 0.005637419, y: -0.0000076253227, z: 0.0013526039, w: 0.99998325}
+  m_LocalPosition: {x: -48.2, y: 0, z: -2.7}
   m_LocalScale: {x: 3, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199483312}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0.646, y: -0.747, z: 0.155}
+  m_LocalEulerAnglesHint: {x: 0.646, y: 0, z: 0.155}
 --- !u!65 &307411672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2683,6 +2683,7 @@ GameObject:
   - component: {fileID: 1990383867}
   - component: {fileID: 1990383866}
   - component: {fileID: 1990383865}
+  - component: {fileID: 1990383868}
   m_Layer: 0
   m_Name: WinFlag
   m_TagString: Untagged
@@ -2769,6 +2770,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990383863}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1990383868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990383863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8679089a1e404e99fd91554654529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerText: {fileID: 971791664}
 --- !u!1001 &2521431457336349596
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -19,9 +19,13 @@ public class Timer : MonoBehaviour
     }
 
     public void TimerUI() {
+        // if (TimerText.color == Color.green)
+        //     return;
+
         mlSeconds += Time.deltaTime * 1000;
+        String strMS = mlSeconds.ToString();
         // TimerText.text = minutes + ":" + seconds.ToString("00") + "." + mlSeconds.ToString("00");
-        TimerText.text = String.Format("{0:0}:{1:00}.{2:00}", minutes, seconds, mlSeconds);
+        TimerText.text = String.Format("{0:0}:{1:00}.{2}{3}", minutes, seconds, strMS[0], strMS[1]);
 
         if (mlSeconds >= 1000) {
             seconds++;
